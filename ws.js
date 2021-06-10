@@ -4,7 +4,7 @@ import helper from './helper.js';
 const maxWordCount = 5; // maximum word count attacking
 
 // word database
-const wordList = ['door', 'pen', 'hotel', 'rush', 'zero', 'jump', 'sex', 'think', 'walk', 'freeze', ];
+const wordList = ['door', 'pen', 'hotel', 'rush', 'zero', 'jump', 'stink', 'think', 'walk', 'freeze', 'apple','bat','cash', 'end' ];
 
 const words = [];
 let score = 0;
