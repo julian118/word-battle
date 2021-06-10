@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Hammersmith+One&display=swap');
+p,div,input,button {
+    font-family: 'Hammersmith One', sans-serif;
+}
+body{
+    overflow: hidden;
+    background: url(stars.jpg);
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+}
+.word {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    font-size: 32px;
+}
+.word.target {
+    color: rgb(0, 255, 213);
+    font-size: 40px;
+}
+.hero {
+    width: 80px;
+    height: 80px;
+    background: url("planet.png");
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    margin: -20px 0 0 -20px;
+    border-radius: 100%;
+    animation: spin 3s forwards 0s infinite forwards forwards;
+}
+#score {
+    position: absolute;
+    top: 1em;
+    left: 48vw;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Bowlby One', cursive;
+}
+.how {
+    position: absolute;
+    bottom: 1em;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 2;   
+    width: 100%;
+    text-align: center;
+    animation-name: mission;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes mission {
+    0% {width: 0;}
+    15% {width: 100%;}
+    80% {width:100%}
+    100% {width: 0%;}
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
